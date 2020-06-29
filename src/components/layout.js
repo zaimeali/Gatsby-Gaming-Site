@@ -13,6 +13,9 @@ import React from "react"
 import "./layout.css"
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+
+import Navbar from './Globals/Navbar';
+
 import { GiDeathJuice } from 'react-icons/gi'
 
 const Layout = ({ children }) => {
@@ -47,8 +50,9 @@ const Layout = ({ children }) => {
   // )
 
   return(
-    <div className="jumbotron">
-      <h1 className="bg-light">Nice</h1>
+    <div className="">
+      <Navbar />
+      {/*<h1 className="bg-light">Nice</h1>*/}
       { children }
       <GiDeathJuice />
     </div>
