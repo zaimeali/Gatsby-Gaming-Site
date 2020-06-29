@@ -1,3 +1,9 @@
+## Packages Used
+
+1) Bootstrap
+2) React Icons  (https://react-icons.github.io/react-icons)
+
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">

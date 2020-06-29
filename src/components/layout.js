@@ -11,6 +11,9 @@ import React from "react"
 
 // import Header from "./header"
 import "./layout.css"
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+import { GiDeathJuice } from 'react-icons/gi'
 
 const Layout = ({ children }) => {
   // const data = useStaticQuery(graphql`
@@ -44,9 +47,10 @@ const Layout = ({ children }) => {
   // )
 
   return(
-    <div>
-      <h1>Nice</h1>
+    <div className="jumbotron">
+      <h1 className="bg-light">Nice</h1>
       { children }
+      <GiDeathJuice />
     </div>
   )
 }
