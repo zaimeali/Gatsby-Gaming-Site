@@ -40,7 +40,7 @@ export default class ComponentName extends Component {
     render() {
         return (
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-                <Link to='/' className="navbar-brand">
+                <Link to='/' className="navbar-brand ml-sm-5">
                     <img className="custom-nav-img" src={ logo } alt="logo here" />
                 </Link>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -56,8 +56,8 @@ export default class ComponentName extends Component {
                             ))
                         }
                         <li className="nav-item mx-sm-5">
-                            <Link href="#" className="btn btn-primary">
-                                <FaCartArrowDown className="cart-icon" />
+                            <Link href="#" className="btn btn-secondary">
+                                <span>Add to Cart</span> <FaCartArrowDown className="cart-icon" />
                             </Link>
                         </li>
                     </ul>
