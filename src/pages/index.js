@@ -1,5 +1,5 @@
 import React from "react"
-// import { Link } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 // import Image from "../components/image"
@@ -25,5 +25,17 @@ const IndexPage = () => (
     <h1>Hi People</h1>
   </Layout>
 )
+
+export const query = graphql`
+  {
+    img: file(relativePath: {eq: "default-background.jpeg"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+  }
+`;
 
 export default IndexPage

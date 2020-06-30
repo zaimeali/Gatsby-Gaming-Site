@@ -55,7 +55,7 @@ export default class ComponentName extends Component {
                                 </li>
                             ))
                         }
-                        <li className="nav-item mx-sm-5">
+                        <li className="nav-item ml-sm-3 mr-sm-5">
                             <Link href="#" className="btn btn-secondary">
                                 <span>Add to Cart</span> <FaCartArrowDown className="cart-icon" />
                             </Link>
