@@ -7,6 +7,11 @@
 5) Gatsby Source File System
 6) Gatsby Plugin Sharp
 
+
+## 🧐 Understanding
+
+1) The query in the same file will pass as a prop in function
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">

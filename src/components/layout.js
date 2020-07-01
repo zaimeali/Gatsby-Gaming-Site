@@ -16,7 +16,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import Navbar from './Globals/Navbar';
 
-import { GiDeathJuice } from 'react-icons/gi'
+// import { GiDeathJuice } from 'react-icons/gi'
 
 const Layout = ({ children }) => {
   // const data = useStaticQuery(graphql`
@@ -54,7 +54,6 @@ const Layout = ({ children }) => {
       <Navbar />
       {/*<h1 className="bg-light">Nice</h1>*/}
       { children }
-      <GiDeathJuice />
     </div>
   )
 }
