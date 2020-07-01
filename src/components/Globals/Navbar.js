@@ -39,7 +39,7 @@ export default class ComponentName extends Component {
 
     render() {
         return (
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Navbar className="custom-nav" collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Link to='/' className="navbar-brand ml-sm-5">
                     <img className="custom-nav-img" src={ logo } alt="logo here" />
                 </Link>

@@ -22,12 +22,12 @@ import BackgroundSection from '../components/Globals/BackgroundSection'
 // )
 
 const IndexPage = ({ data }) => (
-  <Layout>
+  <Layout className="custom-nice">
     <SEO title="Home" />
     {/*<h1>Hi People</h1>*/}
     <BackgroundSection 
       img={ data.img.childImageSharp.fluid }
-      title="Gaming 20"
+      title="Gaming 2.0"
       styleClass="default-background"
 
     />
@@ -36,9 +36,9 @@ const IndexPage = ({ data }) => (
 
 export const query = graphql`
   {
-    img: file(relativePath: {eq: "bg.jpg"}) {
+    img: file(relativePath: {eq: "bg1.jpg"}) {
       childImageSharp {
-        fluid {
+        fluid(quality: 100, maxWidth: 7000, maxHeight: 4000) {
           ...GatsbyImageSharpFluid_tracedSVG
         }
       }
