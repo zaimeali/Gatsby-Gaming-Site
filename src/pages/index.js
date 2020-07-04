@@ -29,7 +29,7 @@ const IndexPage = ({ data }) => (
     {/*<h1>Hi People</h1>*/}
     <BackgroundSection 
       img={ data.img.childImageSharp.fluid }
-      title="Gaming 2.0"
+      title="Welcome to Gaming 2.0"
       styleClass="default-background"
     />
     <Info />

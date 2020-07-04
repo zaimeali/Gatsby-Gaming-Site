@@ -29,6 +29,21 @@ h1, h2, h3, h4, h5, h6{
   width: 64px;
 }
 
+.web-title{
+  font-weight: 700;
+  font-size: 28px;
+  margin-left: 8px;
+  position: absolute;
+  top: 28px;
+  font-family: 'Bangers', cursive;
+  color: rgb(228, 228, 228);
+  /* margin-bottom: -8px !important; */
+}
+
+.web-title:hover{
+  color: rgb(167, 166, 166);
+}
+
 .ctm-btn{
   margin-bottom: -14px !important;
 }
@@ -40,11 +55,11 @@ h1, h2, h3, h4, h5, h6{
   margin-top: -2px !important;
 }
 
-.custom-nav{
-  /* position: absolute; */
-  /* z-index: 1010; */
-  /* opacity: 0; */
-}
+/* .custom-nav{
+  position: absolute;
+  z-index: 1010;
+  opacity: 0;
+} */
 
 
 .default-background{
@@ -60,9 +75,22 @@ h1, h2, h3, h4, h5, h6{
   background-size: cover;
 }
 
-.custom-nice{
-  /* z-index: -1; */
+.another-background{
+  margin-top: 0px !important;
+  /* position: absolute; */
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* z-index: -1000; */
+  background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5));
+  background-position: center;
+  background-size: cover;
 }
+
+/* .custom-nice{ */
+  /* z-index: -1; */
+/* } */
 
 .btn-red{
   background-color: crimson !important;

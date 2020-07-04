@@ -13,8 +13,8 @@ const AboutPage = ({ data }) => (
     <SEO title="Home" />
     <BackgroundSection 
       img={ data.img.childImageSharp.fluid }
-      title="Gaming 2.0"
-      styleClass="default-background"
+      title="About Us"
+      styleClass="another-background"
     />
     <Info />
     <Footer name="Zaime Ali" />
