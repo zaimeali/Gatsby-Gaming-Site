@@ -21,7 +21,12 @@ export default class ComponentName extends Component {
             {
                 id: 2,
                 path: '/about',
-                text: 'about'
+                text: 'about us'
+            },
+            {
+                id: 3,
+                path: '/blog',
+                text: 'blog'
             }
         ],
     }
@@ -56,7 +61,7 @@ export default class ComponentName extends Component {
                             ))
                         }
                         <li className="nav-item ml-sm-3 mr-sm-5">
-                            <Link href="#" className="btn btn-secondary">
+                            <Link href="#" className="btn btn-secondary btn-sm ctm-btn">
                                 <span>Add to Cart</span> <FaCartArrowDown className="cart-icon" />
                             </Link>
                         </li>
