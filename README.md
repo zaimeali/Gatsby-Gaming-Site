@@ -6,6 +6,7 @@
 4) Gatsby Background Image
 5) Gatsby Source File System
 6) Gatsby Plugin Sharp
+7) Gatsby Source Contentful (npm install --save gatsby-source-contentful)
 
 
 ## 🧐 Understanding
