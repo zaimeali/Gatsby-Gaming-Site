@@ -17,6 +17,7 @@ const AboutPage = ({ data }) => (
       styleClass="another-background"
     />
     <Info />
+    <Info />
     <Footer name="Zaime Ali" />
   </Layout>
 )
