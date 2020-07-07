@@ -27,6 +27,11 @@ export default class ComponentName extends Component {
                 id: 3,
                 path: '/blog',
                 text: 'blog'
+            },
+            {
+                id: 4,
+                path: '/team',
+                text: 'team'
             }
         ],
     }
