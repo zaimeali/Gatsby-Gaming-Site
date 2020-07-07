@@ -90,7 +90,7 @@ export default class Menu extends Component {
                                             <div className="flex-grow-1 px-3">
                                                 <div className="d-flex justify-content-between">
                                                     <h6 className="mb-0 font-weight-bold text-item-title">{ node.title }</h6>
-                                                    <h6 className="mb-0 text-price pr-3">${ node.price }</h6>
+                                                    <h6 className="mb-0 text-price pr-3">PKR { node.price }</h6>
                                                 </div>
                                                 <p className="text-muted">
                                                     <small>{ node.description.description.length > 100 ? node.description.description.substring(0, 220) + "..." : node.description.description }</small>
