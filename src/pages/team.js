@@ -5,7 +5,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import BackgroundSection from '../components/Globals/BackgroundSection'
-import Info from "../components/Home/Info"
 import Footer from "../components/Globals/Footer"
 
 const AboutPage = ({ data }) => (
@@ -28,6 +27,24 @@ export const query = graphql`
           ...GatsbyImageSharpFluid_tracedSVG
         }
       }
+    }
+    menu: allContentfulGameItems {
+        edges {
+          node {
+            id
+            title
+            description {
+              description
+            }
+            price
+            genre
+            image {
+              fixed(width: 50, height: 50) {
+                ...GatsbyContentfulFixed_tracedSVG
+              }
+            }
+          }
+        }
     }
   }
 `;

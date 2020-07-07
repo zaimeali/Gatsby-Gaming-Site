@@ -8,6 +8,7 @@ import SEO from "../components/seo"
 import BackgroundSection from '../components/Globals/BackgroundSection'
 import Info from "../components/Home/Info"
 import Footer from "../components/Globals/Footer"
+import Menu from "../components/Home/Menu"
 
 // const IndexPage = () => (
 //   <Layout>
@@ -33,6 +34,7 @@ const IndexPage = ({ data }) => (
       styleClass="default-background"
     />
     <Info />
+    <Menu items={ data.menu } />
     <Footer name="Zaime Ali" />
   </Layout>
 )
