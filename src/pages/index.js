@@ -48,6 +48,24 @@ export const query = graphql`
         }
       }
     }
+    menu: allContentfulGameItems {
+        edges {
+          node {
+            id
+            title
+            description {
+              description
+            }
+            price
+            genre
+            image {
+              fixed(width: 50, height: 50) {
+                ...GatsbyContentfulFixed_tracedSVG
+              }
+            }
+          }
+        }
+    }
   }
 `;
 
