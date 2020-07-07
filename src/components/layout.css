@@ -88,6 +88,10 @@ h1, h2, h3, h4, h5, h6{
   background-size: cover;
 }
 
+.menu{
+  background-color: #ebe9d9;
+}
+
 /* .custom-nice{ */
   /* z-index: -1; */
 /* } */
@@ -96,6 +100,16 @@ h1, h2, h3, h4, h5, h6{
   background-color: crimson !important;
   color: white !important;
   border-color: red !important;
+}
+
+.text-price{
+  color: red;
+}
+
+.text-item-title{
+  font-family: 'Source Sans Pro', sans-serif !important;
+  letter-spacing: 0.05rem !important;
+  font-size: 18px;
 }
 
 .text-footer{
