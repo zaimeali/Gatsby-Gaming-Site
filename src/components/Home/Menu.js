@@ -4,6 +4,16 @@ import Title from '../Globals/Title'
 
 import Img from 'gatsby-image'
 
+
+const getCategories = ( items ) => {
+    let tempItems = items.map(( item ) => {
+        return item.node.genre;
+    });
+    let tempGenres = new Set(tempItems);
+    tempGenres = ['all', ...tempGenres];
+    return Array.from(tempGenres); 
+}
+
 export default class Menu extends Component {
     constructor(props){
         super(props);
@@ -12,8 +22,30 @@ export default class Menu extends Component {
 
         this.state = {
             items: props.items.edges,
-            gamingItems: props.items.edges
+            gamingItems: props.items.edges,
+            categories: getCategories(props.items.edges)
         };
+
+        this.handleItems = this.handleItems.bind(this);
+    }
+
+    handleItems = (genre) => {
+        let tempItems = [...this.state.items];
+        if(genre === 'all'){
+            this.setState(() => {
+                return{
+                    gamingItems: tempItems
+                }
+            });
+        }
+        else{
+            let items = tempItems.filter(({ node }) => node.genre === genre );
+            this.setState(() => {
+                return{
+                    gamingItems: items
+                }
+            });
+        }
     }
 
     render() {
@@ -22,6 +54,28 @@ export default class Menu extends Component {
                 <section className="menu py-5">
                     <div className="container">
                         <Title title="2020 BEST GAMES" />
+
+                        <div className="row mb-5">
+                            <div className="col-12 mx-auto text-center">
+                                {
+                                    this.state.categories.map(( genre, index ) => {
+                                        return (
+                                            <button 
+                                                key={ index } 
+                                                type="button" 
+                                                className="btn btn-danger text-capitalize m-3"
+                                                onClick={() => { 
+                                                    this.handleItems(genre);
+                                                }}
+                                            >
+                                                { genre }
+                                            </button>
+                                        )
+                                    })
+                                } 
+                            </div>
+                        </div>
+
                         <div className="row">
                             {
                                 this.state.gamingItems.map(({ node }) => {
